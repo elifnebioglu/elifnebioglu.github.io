@@ -2,96 +2,111 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      [cite_start]value: Elif Nebioglu [cite: 1]
+    - name: Location
+      [cite_start]value: Paris, France [cite: 3]
+    - name: Phone
+      [cite_start]value: +33 759512141 [cite: 2]
+    - name: Email
+      [cite_start]value: elifnebioglu@hotmail.com [cite: 4]
+    - name: LinkedIn
+      [cite_start]value: linkedin.com/in/elif-nebioglu [cite: 5]
+    - name: GitHub
+      [cite_start]value: github.com/elifnebioglu [cite: 5]
     - name: Languages
-      value: English, German
+      [cite_start]value: Turkish (C2), English (C1), French (B1), German (B1) [cite: 52]
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Master MVA (Mathematics, Vision, Apprentissage)
+      [cite_start]institution: ENS Paris-Saclay, Paris, France [cite: 7, 8]
+      [cite_start]year: 2024-2025 [cite: 8]
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
+        - [cite_start]GPA: 14.79/20.0 (Honor Student) [cite: 9]
+        - title: Selected coursework
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+            - [cite_start]Convex Optimization [cite: 9]
+            - [cite_start]Object Recognition and Computer Vision [cite: 9]
+            - [cite_start]Reinforcement Learning, Geometric Data Analysis [cite: 9]
+            - [cite_start]Probabilistic Graphical Models, Representation Learning [cite: 9]
+            - [cite_start]Bayesian ML, DL in Practice, Generative Modelling, Graphs in ML [cite: 9]
+    - title: Bachelors of Science in Computer Engineering
+      [cite_start]institution: TOBB University of Economics and Technology, Ankara, Türkiye [cite: 10, 12]
+      [cite_start]year: 2019-2024 [cite: 13]
       description:
-        - Description 1.
-        - Description 2.
+        - [cite_start]GPA: $3.21/4.0$ (Honor Student) [cite: 11]
+        - [cite_start]Merit-based scholarship covering five years of tuition and living expenses, awarded by the Istanbul Chamber of Industry for ranking in the top 0.003 in the National University Examination. [cite: 14]
 
-- title: Experience
+- title: Work Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Computer Vision Research Intern
+      [cite_start]institution: DxO Labs, Paris, France [cite: 16, 17]
+      [cite_start]year: Apr 2025-Oct 2025 [cite: 19]
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - [cite_start]Benchmarked face detectors and facial-feature segmentation for portrait editing; produced precise masks and compared SOTA baselines. [cite: 20]
+        - [cite_start]Built geometry-based face warping (Laplacian deformation) and face recognition modules, later used in production. [cite: 21]
+    - title: Computer Vision Research Intern
+      [cite_start]institution: TOBB University of Economics and Technology, Ankara, Türkiye [cite: 22, 27]
+      [cite_start]year: Jul 2024-Sep 2024 [cite: 27]
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - [cite_start]Built a video-to-label ML pipeline to classify stereotypic locomotor behaviors in fruit flies (Drosophila) within a TÜBİTAK-funded cognitive research project. [cite: 24, 28]
+    - title: Data Science Intern
+      [cite_start]institution: TEMSA, Istanbul, Türkiye [cite: 25, 29]
+      [cite_start]year: Jul 2024-Sep 2024 [cite: 29]
       description:
+        - [cite_start]Designed an anomaly-detection system for the MD-9 electric bus: cleaned and merged vehicle CAN telemetry, analyzed signal patterns, and trained time-series models to predict normal behavior and flag anomalies for maintenance. [cite: 30]
+    - title: Software Engineering Intern
+      [cite_start]institution: STM, Ankara, Türkiye [cite: 31, 40]
+      [cite_start]year: Oct 2023-Jan 2024 [cite: 40]
+      description:
+        - [cite_start]Worked as a full-stack developer, contributing to in-house web applications using Angular and C\#. [cite: 33]
+    - title: Research Intern
+      [cite_start]institution: Telecom Paris, Paris, France [cite: 34, 41]
+      [cite_start]year: Feb 2023-May 2023 [cite: 42]
+      description:
+        - [cite_start]Contributed to ACMOM's Eclipse-based model-transformation benchmark, automating runs, and reporting performance metrics. [cite: 36, 42]
+    - title: Software Engineering Intern
+      [cite_start]institution: HAVELSAN, Ankara, Türkiye [cite: 37, 43]
+      [cite_start]year: Jan 2022-Apr 2022 [cite: 43]
+      description:
+        - [cite_start]Contributed to DOOB-Tactical; implemented JAX for differentiable computing tasks. [cite: 38]
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Plug-and-Play Split Gibbs Sampler for Image Restoration (MVA)
+      description:
+        - [cite_start]Explored Bayesian image restoration using Plug-and-Play inference with DDPM priors, enabling posterior sampling and uncertainty quantification. [cite: 44]
+        - [cite_start]Compared its performance against DPS and DnCNN-based baselines, achieving sharper and more reliable reconstructions. [cite: 45]
+    - title: Text-to-3D Human Motion Generation (MVA)
+      description:
+        - [cite_start]Reproduced the Motion Diffusion Model (MDM) with SMPL outputs and extended it with TMR++ text augmentation and cross-dataset generalization on HumanML3D and KIT-ML. [cite: 46]
+    - title: VibeTune (TOBB ETU)
+      description:
+        - [cite_start]Built a prompt-based music recommendation pipeline combining Mistral-7B fine-tuning with ChatGPT sentiment embeddings for mood-conditioned retrieval. [cite: 47]
+        - [cite_start]Implemented a React interface to support interactive user feedback loops and real-time recommendation updates. [cite: 48]
 
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
-
-- title: Academic Interests
+- title: Skills & Other
   type: nested_list
   contents:
-    - title: Topic 1.
+    - [cite_start]title: Technical [cite: 50]
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - [cite_start]Python, Java, C++, MATLAB, NumPy, Pandas, OpenCV [cite: 50]
+        - [cite_start]Keras, PyTorch, Scikit-learn, Git, JAX, SQL [cite: 50]
+    - [cite_start]title: Teaching [cite: 51]
       items:
-        - Description 1.
-        - Description 2.
+        - [cite_start]Assisted Linear Algebra course at TOBB ETU [cite: 51]
+        - [cite_start]Tutored physics, maths to high school students [cite: 51]
+    - [cite_start]title: Interests [cite: 53]
+      items:
+        - [cite_start]Swimming (12 years) [cite: 53]
+        - [cite_start]Figure skating, tennis, oil painting [cite: 53]
 
-- title: Other Interests
+- title: References
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - [cite_start]Thomas Veit: Research Scientist, DxO Labs, tveit@dxo.com [cite: 55]
+    - [cite_start]Jean-Emmanuel Deschaud: Lecturer, ENS Paris-Saclay / Mines Paris, jean-emmanuel.deschaud@minesparis.psl.eu [cite: 56]
+    - [cite_start]Ahmet Murat Özbayoğlu: Professor, TOBB University of Economics and Technology, mozbayoglu@gmail.com [cite: 57]
