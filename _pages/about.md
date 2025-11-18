@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: 
 
 profile:
   align: right
@@ -25,6 +25,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi, I’m Elif Nebioğlu. I recently completed the Master MVA (Mathematics, Vision, Apprentissage) at ENS Paris-Saclay, where I focused on computer vision, generative modelling, Bayesian image restoration, and geometric data analysis. Before that, I earned my Bachelor’s degree in Computer Engineering from TOBB University of Economics and Technology as an honor student with a full merit-based scholarship.
+Hi, I’m Elif Nebioglu. I recently completed the Master MVA (Mathematics, Vision, Apprentissage) at ENS Paris-Saclay, where I focused on computer vision, generative modelling, Bayesian image restoration, and geometric data analysis. Before that, I earned my Bachelor’s degree in Computer Engineering from TOBB University of Economics and Technology as an honor student with a full merit-based scholarship.
 
 I’ve worked in both research and industry through internships at DxO Labs, TOBB ETU, TEMSA, STM, Telecom Paris, and HAVELSAN. My experience includes face detection and segmentation, geometry-based face warping, behavioral video analysis for cognitive research, anomaly detection in electric vehicles, full-stack development, and differentiable computing. I enjoy working at the intersection of mathematical modelling and practical machine learning systems.
