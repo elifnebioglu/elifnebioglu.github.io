@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: take a look at what I've got involved in
+description: Take a look at what I've got involved in
 nav: true
 nav_order: 2
 display_categories: [lab, class, online, misc]
