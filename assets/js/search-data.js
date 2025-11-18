@@ -46,11 +46,11 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-projects",
-          title: 'Projects',
-          description: "Take a look at what I&#39;ve got involved in",
+          section: "News",},{id: "projects-overlapping-community-detection-in-complex-networks",
+          title: 'Overlapping Community Detection in Complex Networks',
+          description: "SLPA, COPRA, Graph Neural Networks; LFR benchmark; overlapping communities",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/";
+              window.location.href = "/projects/1_project/";
             },},{id: "projects-project-2",
           title: 'project 2',
           description: "a project with a background image and giscus comments",
