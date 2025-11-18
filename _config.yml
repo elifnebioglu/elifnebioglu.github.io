@@ -7,8 +7,8 @@ first_name: Elif
 middle_name: 
 last_name: Nebioglu
 
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+#description: > # the ">" symbol means to ignore newlines until "footer_text:"
+# A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 # contact_note: > # the ">" symbol means to ignore newlines until "contact_email:"
 # description: > # the ">" symbol means to ignore newlines until "footer_text:"
 #   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
