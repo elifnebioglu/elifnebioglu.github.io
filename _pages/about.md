@@ -25,8 +25,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi, I’m Elif Nebioğlu. I recently completed the Master MVA (Mathematics, Vision, Apprentissage) at ENS Paris-Saclay, where I focused on computer vision, generative modelling, Bayesian image restoration, and geometric data analysis. Before that, I earned my Bachelor’s degree in Computer Engineering from TOBB University of Economics and Technology as an honor student with a full merit-based scholarship, awarded for ranking in the top 0.003% nationally.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I’ve worked in both research and industry through internships at DxO Labs, TOBB ETU, TEMSA, STM, Telecom Paris, and HAVELSAN. My experience includes face detection and segmentation, geometry-based face warping, behavioral video analysis for cognitive research, anomaly detection in electric vehicles, full-stack development, and differentiable computing. I enjoy working at the intersection of mathematical modelling and practical machine learning systems.
