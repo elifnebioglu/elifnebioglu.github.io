@@ -2,14 +2,13 @@
 layout: page
 title: Overlapping Community Detection in Complex Networks
 description: SLPA, COPRA, Graph Neural Networks; LFR benchmark; overlapping communities
-#img: assets/img/ocd_cover.png
+img: assets/img/3.jpg
 importance: 4
 category: lab
 ---
 
 This project investigates **overlapping community detection** in complex networks, extending classical label-propagation algorithms and benchmarking them against modern Graph Neural Networks (GNNs).  
-The work was conducted as part of the *Probabilistic Graphical Models / Network Analysis* coursework, jointly with Elif Nebioglu and Marius Michetti. The report is available here: 
-#[[pdf]](../assets/pdf/PGM_report.pdf){:target="_blank"}.
+
 
 Some key points:
 
