@@ -1,81 +1,100 @@
----
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
+title: Plug-and-Play Split Gibbs Sampler for Inverse Imaging
+description: diffusion models; Bayesian inference; plug-and-play; inverse problems
 img: assets/img/3.jpg
-importance: 2
-category: work
-giscus_comments: true
+importance: 4
+category: ml
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+This project investigates the **Plug-and-Play Split Gibbs Sampler (PnP-SGS)** for solving inverse imaging problems, using **Denoising Diffusion Probabilistic Models (DDPMs)** as deep generative priors.  
+The work was completed jointly with Bruna Lopes, as part of a course project on generative models.  
+Full report available here: [[pdf]](../assets/pdf/Generative_models.pdf){:target="_blank"}.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Some key points:
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+- Implemented the full PnP-SGS framework enabling **posterior sampling and uncertainty quantification**.
+- Compared DDPM-based prior with other denoisers such as **DnCNN**, analyzing robustness and failure modes.
+- Evaluated performance on **CelebA** and **brain tumor MRI** datasets for deblurring tasks.
+- Benchmarked against **Diffusion Posterior Sampling (DPS)** and observed stronger fidelity to ground truth.
+- Provided visualizations of reconstruction quality, FID/PSNR metrics, and sampling trajectories for both x-space and z-space.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+---
+
+## Plug-and-Play Split Gibbs Sampler with DDPM Priors
+
+The project focuses on embedding DDPMs into a **Bayesian hierarchical model** by introducing an auxiliary variable \(z\). This formulation allows alternating sampling:
+
+- Sampling \(x\) from a **Gaussian conditional posterior** \(p(x\mid y,z)\)
+- Sampling \(z\) using the **DDPM reverse process** as a stochastic denoiser
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-7 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/generative_models/pnp_sgs_diagram.png" title="PnP-SGS architecture" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    Bayesian structure of PnP-SGS with alternating sampling over x and z.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+Main contributions:
+
+- Reproduced the PnP-SGS results for **Gaussian and motion blur**.
+- Demonstrated that DDPM priors enable stable posterior sampling across varying noise scales.
+- Showed that PnP-SGS preserves **Bayesian uncertainty advantages** while improving reconstruction sharpness.
+
+---
+
+## Experiments on CelebA and Brain Tumor MRI
+
+The framework was tested on two datasets:
+
+- **CelebA** (face images)
+- **Brain Tumor MRI** (medical imaging), resized to \(256\times256\)
+
+Evaluation included **PSNR** and visual comparison of x- and z-chains during sampling.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/generative_models/mri_deblur.png" title="MRI deblurring" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    Sample reconstruction on a brain MRI image using PnP-SGS.
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+Findings:
 
-{% raw %}
+- PnP-SGS achieved **PSNR values comparable to reported FFHQ results**.
+- The DDPM prior struggled with structural features absent from the training distribution (e.g., cortical folds in MRI), suggesting potential benefits from fine-tuning.
 
-```html
+---
+
+## Comparison with Diffusion Posterior Sampling (DPS)
+
+A detailed comparison was conducted between **PnP-SGS** and **DPS**:
+
+- PnP-SGS produced reconstructions **closer to ground truth**, with fewer hallucinated details.
+- DPS was faster but introduced artifacts in textured regions.
+- PnP-SGS provided **natural uncertainty quantification**, unlike DPS.
+
 <div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/generative_models/dps_compare.png" title="DPS vs PnP-SGS" class="img-fluid rounded z-depth-1" %}
+    </div>
 </div>
-```
+<div class="caption">
+    Comparison of DPS reconstructions vs. PnP-SGS.
+</div>
 
-{% endraw %}
+---
+
+## Using Alternative Priors (DnCNN)
+
+To test plug-and-play flexibility, the DDPM prior was replaced with **DnCNN**.  
+Observations:
+
+- DnCNN diverged at **higher noise levels**, due to its fixed-noise training regime.
+- PnP-SGS remained stable with DDPM but required parameter adjustments for DnCNN.
+- A hybrid approach (PnP-PGD initialization → PnP-SGS) slightly improved robustness.
+
+---
