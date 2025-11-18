@@ -51,6 +51,11 @@ ninja.data = [{
           description: "SLPA, COPRA, Graph Neural Networks; LFR benchmark; overlapping communities",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
+            },},{id: "projects-plug-and-play-split-gibbs-sampler-for-inverse-imaging",
+          title: 'Plug-and-Play Split Gibbs Sampler for Inverse Imaging',
+          description: "diffusion models; Bayesian inference; plug-and-play; inverse problems",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_project/";
             },},{id: "projects-project-3-with-very-long-name",
           title: 'project 3 with very long name',
           description: "a project that redirects to another website",
