@@ -56,9 +56,9 @@ ninja.data = [{
           description: "diffusion models; Bayesian inference; plug-and-play; inverse problems",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-",
-          title: '',
-          description: "",
+            },},{id: "projects-empirical-bayes-vaes-excess-risk-bounds",
+          title: 'Empirical Bayes VAEs Excess Risk Bounds',
+          description: "VAEs; empirical Bayes; excess risk theory; generative models",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
             },},{id: "projects-project-4",
