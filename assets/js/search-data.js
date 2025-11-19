@@ -61,9 +61,9 @@ ninja.data = [{
           description: "VAEs; empirical Bayes; excess risk theory; generative models",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
+            },},{id: "projects-prompt-based-song-recommendation-system",
+          title: 'Prompt-Based Song Recommendation System',
+          description: "NLP; sentiment analysis; LLM fine-tuning; music recommendation",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
             },},{id: "projects-project-5",
