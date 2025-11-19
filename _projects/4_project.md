@@ -1,80 +1,123 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
-category: fun
+title: Prompt-Based Song Recommendation System
+description: NLP; sentiment analysis; LLM fine-tuning; music recommendation
+img: assets/img/3.jpg
+importance: 4
+category: lab
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+This project is my **undergraduate capstone thesis**, in which I designed a system that recommends songs based on **free-form user prompts**.  
+The system integrates **sentiment analysis**, **LLM-based semantic modeling**, and a lightweight web application.  
+The work combines classical NLP techniques with modern large-language-model fine-tuning.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Full thesis (English version) coming soon.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+Some key points:
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+- Developed a **prompt-based recommendation pipeline** that interprets user input semantically and emotionally.  
+- Performed **sentiment and mood analysis** using ChatGPT and structured prompt engineering.  
+- Fine-tuned **Mistral-7B** on a custom dataset to better align music descriptors with user intentions.  
+- Built a responsive **React + JavaScript** web interface to deliver real-time recommendations.  
+- Evaluated system accuracy via human feedback and mood–song consistency metrics.
+
+---
+
+## System Overview
+
+The system aims to understand *how a user feels* or *what atmosphere they want*, and translate this into a playlist.  
+The architecture includes:
+
+- A **frontend interface** for natural-language queries  
+- A backend that performs **sentiment classification**, **embedding extraction**, and **semantic matching**  
+- A fine-tuned **Mistral-7B** model that improves alignment between prompts and music descriptors  
+- A curated feature-rich **song database** with genre, mood, and lyrical metadata
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-7 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/grad_project/architecture.png" title="System architecture" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+    High-level structure of the prompt-based music recommendation system.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+---
+
+## Sentiment & Semantic Understanding
+
+The system analyzes user text using:
+
+- **Sentiment polarity** (positive, neutral, negative)  
+- **Emotional tone** (e.g., calm, energetic, melancholic)  
+- **Contextual cues** (e.g., “studying”, “night walk”, “heartbreak”, “dance vibe”)  
+- **LLM-generated embeddings** for deeper semantic meaning
+
+These features are combined to rank songs based on **mood compatibility** and **semantic similarity**.
+
+---
+
+## Fine-Tuning Mistral-7B
+
+To improve performance beyond zero-shot LLMs, we fine-tuned **Mistral-7B** on:
+
+- song descriptions  
+- mood tags  
+- emotional keywords  
+- user-prompt–song relevance pairs  
+
+Fine-tuning helped the model:
+
+- generate more accurate song descriptors  
+- better understand ambiguous or metaphorical prompts  
+- avoid over-generic recommendations
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/grad_project/fine_tuning.png" title="Fine-tuning process" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    Fine-tuning pipeline for aligning LLM outputs with music metadata.
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+---
 
-{% raw %}
+## Web Interface
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+A simple React web interface allows users to:
 
-{% endraw %}
+- Type any natural-language request  
+- View recommended tracks instantly  
+- Explore song mood attributes and metadata  
+- Interact with a clean, mobile-responsive UI
+
+The interface communicates with the backend through a lightweight API.
+
+---
+
+## Results
+
+- Human evaluators rated recommendations as **highly aligned** with the intended mood.  
+- The fine-tuned model improved **semantic matching accuracy** compared to baseline models.  
+- The system performed especially well for:  
+  - emotional prompts (e.g., “I feel nostalgic”)  
+  - situation-based prompts (e.g., “songs for a snowy evening”)  
+  - activity-based prompts (e.g., “focus music”)  
+
+Limitations include dataset size and the need for more diverse musical genres.
+
+---
+
+## Discussion & Future Work
+
+Future improvements include:
+
+- Expanding the song dataset with audio-based features  
+- Adding multi-modal embeddings (lyrics + audio)  
+- Incorporating reinforcement learning from user feedback  
+- Deployment as a public web app or Spotify plugin  
+
+This project demonstrates how **LLMs, sentiment analysis, and classical recommendation methods** can be combined to build intuitive, mood-aware interactive systems.
+
+---
