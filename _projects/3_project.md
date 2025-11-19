@@ -2,7 +2,7 @@
 layout: page
 title: Empirical Bayes VAEs: Excess Risk Bounds
 description: VAEs; empirical Bayes; excess risk theory; generative models
-img: assets/img/3.png
+img: assets/img/3.jpg
 importance: 4
 category: lab
 ---
