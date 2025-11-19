@@ -4,7 +4,7 @@ title: Plug-and-Play Split Gibbs Sampler for Inverse Imaging
 description: diffusion models; Bayesian inference; plug-and-play; inverse problems
 img: assets/img/3.jpg
 importance: 4
-category: ml
+category: lab
 ---
 
 This project investigates the **Plug-and-Play Split Gibbs Sampler (PnP-SGS)** for solving inverse imaging problems, using **Denoising Diffusion Probabilistic Models (DDPMs)** as deep generative priors.  
