@@ -9,7 +9,6 @@ category: ml
 
 This project investigates the **Plug-and-Play Split Gibbs Sampler (PnP-SGS)** for solving inverse imaging problems, using **Denoising Diffusion Probabilistic Models (DDPMs)** as deep generative priors.  
 The work was completed jointly with Bruna Lopes, as part of a course project on generative models.  
-Full report available here: [[pdf]](../assets/pdf/Generative_models.pdf){:target="_blank"}.
 
 Some key points:
 
