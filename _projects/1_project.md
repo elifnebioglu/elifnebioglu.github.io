@@ -2,7 +2,7 @@
 layout: page
 title: Overlapping Community Detection in Complex Networks
 description: SLPA, COPRA, Graph Neural Networks; LFR benchmark; overlapping communities
-img: assets/img/3.jpg
+img: assets/img/overlap.png
 importance: 4
 category: lab
 ---
