@@ -2,7 +2,7 @@
 layout: page
 title: Plug-and-Play Split Gibbs Sampler for Inverse Imaging
 description: diffusion models; Bayesian inference; plug-and-play; inverse problems
-img: assets/img/3.jpg
+img: assets/img/plug.png
 importance: 4
 category: lab
 ---
