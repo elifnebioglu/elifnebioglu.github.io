@@ -4,7 +4,7 @@ permalink: /cv/
 title: cv
 nav: true
 nav_order: 5
-cv_pdf: main.pdf # you can also use external links here
+cv_pdf: CV_Elif_NEBIOGLU_2025 (18).pdf # you can also use external links here
 description:
 toc:
   sidebar: left
