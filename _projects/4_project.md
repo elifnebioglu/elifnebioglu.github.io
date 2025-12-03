@@ -2,7 +2,7 @@
 layout: page
 title: Prompt-Based Song Recommendation System
 description: NLP; sentiment analysis; LLM fine-tuning; music recommendation
-img: assets/img/vibetune.png
+img: assets/img/5.jpg
 importance: 4
 category: lab
 ---
