@@ -9,9 +9,7 @@
   booktitle={International Conference on Machine Learning (ICML)},
   note={Coming Soon},
   abstract={Modern AI-generated image detectors achieve strong performance by exploiting artifacts shared across generative models. In this work, we show that for diffusion-based inpainting, a dominant cue is not the edited region itself but a global, filter-like artifact introduced by full-image denoising. We propose a simple post-processing operation, Inpainting Exchange, which preserves the inpainted region while restoring all non-edited pixels from the original image, thereby removing the global denoising footprint. This operation dramatically degrades the accuracy of frequency-based and CLIP-based detectors, often approaching chance-level performance. We complement our attack with a mathematical analysis of diffusion inpainting, interpretability studies revealing detector attention bias, and a 150K-image benchmark extending Semi-Truths. Our results expose a fundamental vulnerability in current detection paradigms and motivate region-aware, artifact-robust approaches.},
-  additional_info={**Our claim:** AI-generated image detectors are not robust and quite vulnerable to simple attacks, especially when the image is not fully generated but partially generated (or manipulated / inpainted). Even when a small part of the image is inpainted, a "filter" is added to the image, making it obvious that it's AI-generated. So, AI-generated detectors are detecting it as AI-generated, easily. Two problems arise: (1) What if we only inpaint the image's small part and exchange the rest with the original? So that (i) we would not be detected by detectors, (ii) it would potentially be a better editing method, since the rest of the image wouldn't be affected by inpainting. (2) The AI-generated image detectors shouldn't label the inpainted images as fully AI-generated, as they do. They should label them as "manipulated/inpainted" or "partially generated" images. Notably, even the strongest AI-generated image detectors, which differentiate between the inpainted and the fully-generated images, are deceived when we replace the non-inpainted area, and they falsely label those images as fully real.},
   selected={true},
-  pdf={icml2026.pdf}
+  pdf={icml2026.pdf},
+  html={/publications/icml2026-exchanging-inpainting/}
 }
-
-
