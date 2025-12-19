@@ -11,44 +11,8 @@ nav_order: 2
 
 <!-- Bibsearch Feature -->
 
-## Overview
-
-This work exposes a fundamental vulnerability in modern AI-generated image detectors by identifying a global filter-like artifact induced by diffusion-based inpainting. We propose **Inpainting Exchange**, a simple post-processing operation that removes this global artifact while preserving semantic edits, causing state-of-the-art detectors to fail dramatically.
-
-## Key Findings
-
-### The Problem
-When diffusion-based inpainting edits even a small region, the entire image undergoes iterative denoising, introducing a subtle but consistent global transformation. Many detectors rely heavily on this global artifact rather than the inpainted content itself.
-
-### Our Solution: Inpainting Exchange
-Given a real image $x$, its inpainted version $\tilde{x}$, and mask $M$, the exchanged image is:
-$$x^{\mathrm{ex}} = M \odot \tilde{x} + (1-M) \odot x$$
-
-This operation removes the global denoising artifact while preserving the edited region.
-
-### Experimental Results
-
-**Commercial Detectors:**
-- **Sightengine**: 87.8% accuracy on standard inpainted images → 54.4% on exchanged images (AUC: 0.96 → 0.61)
-- **Hive**: 95% accuracy on standard inpainted images → 55% on exchanged images (AUC: 0.97 → 0.58)
-
-**Open-Source Detectors:**
-- **CrossEfficientViT**: Near-random performance (~50% accuracy, AUC < 0.5)
-- **UniversalFakeDetect**: 50% accuracy at default threshold, optimal AUC ~0.71
-- **De-fake**: Below 50% accuracy on exchanged dataset
-
-**Training Results:**
-Models trained on our exchanged dataset achieve better generalization (77.95% accuracy, 0.861 AUC) and superior localization (Mean IoU: 0.481) compared to models trained on standard datasets.
-
-### Dataset
-We introduce a 150K-image benchmark extending Semi-Truths:
-- 50K real images
-- 50K standard inpainted images  
-- 50K exchanged inpainted images
-
 <div class="publications">
 
-
+{% bibliography %}
 
 </div>
-
