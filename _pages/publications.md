@@ -48,7 +48,7 @@ We introduce a 150K-image benchmark extending Semi-Truths:
 
 <div class="publications">
 
-{% bibliography %}
+
 
 </div>
 
