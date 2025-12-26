@@ -12,7 +12,22 @@ nav_order: 2
 <!-- Bibsearch Feature -->
 
 <div class="publications">
-
-{% bibliography %}
-
+  <div class="card mt-3 p-3">
+    <div class="card-body">
+      <h2 class="card-title">
+        <a href="/publications/icml2026-exchanging-inpainting/" style="color: inherit; text-decoration: none;">
+          Exchanging Inpainting Context: Revealing Global-Artifact Bias in AI-Generated Image Detectors
+        </a>
+      </h2>
+      <div class="card-text">
+        <p><strong>Authors:</strong> Elif Nebioğlu, Emirhan Bilgiç, Adrian Popescu</p>
+        <p><strong>Conference:</strong> ICML 2026 | <span style="color: #888;">Coming Soon</span></p>
+        <p><strong>Abstract:</strong> Modern AI-generated image detectors achieve strong performance by exploiting artifacts shared across generative models. In this work, we show that for diffusion-based inpainting, a dominant cue is not the edited region itself but a global, filter-like artifact introduced by full-image denoising. We propose a simple post-processing operation, Inpainting Exchange, which preserves the inpainted region while restoring all non-edited pixels from the original image, thereby removing the global denoising footprint. This operation dramatically degrades the accuracy of frequency-based and CLIP-based detectors, often approaching chance-level performance. We complement our attack with a mathematical analysis of diffusion inpainting, interpretability studies revealing detector attention bias, and a 150K-image benchmark extending Semi-Truths. Our results expose a fundamental vulnerability in current detection paradigms and motivate region-aware, artifact-robust approaches.</p>
+        <p>
+          <a href="/publications/icml2026-exchanging-inpainting/" class="btn btn-sm z-depth-0">Read More →</a>
+          <a href="/assets/pdf/icml2026.pdf" target="_blank" class="btn btn-sm z-depth-0">PDF</a>
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
