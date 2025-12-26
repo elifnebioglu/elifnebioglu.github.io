@@ -54,7 +54,7 @@ Crucially, even if the latent diffusion process perfectly preserves the unmasked
 
 <div class="row mt-3">
     <div class="col-sm-12 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/publications/icml2026/main_figure.jpeg" class="img-fluid rounded z-depth-1" zoomable=true caption="Figure 2. Overview of the Inpainting Exchange pipeline. Standard inpainting applies a full-image denoising and VAE reconstruction pass. Our method restores the original pixels outside the mask; the difference map is strictly localized." %}
+        {% include figure.liquid path="assets/img/main_figure.jpeg" class="img-fluid rounded z-depth-1" zoomable=true caption="Figure 2. Overview of the Inpainting Exchange pipeline. Standard inpainting applies a full-image denoising and VAE reconstruction pass. Our method restores the original pixels outside the mask; the difference map is strictly localized." %}
     </div>
 </div>
 
@@ -168,7 +168,7 @@ We trained three detector architectures (ResNet-50, EfficientNet, and ViT) on bo
 
 <div class="row mt-3">
     <div class="col-sm-12 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/publications/icml2026/more_localizations.jpeg" class="img-fluid rounded z-depth-1" zoomable=true caption="Figure 6. Additional localization examples showing detector attention via GradCAM. (a) Mask indicates the inpainted region. (b) Standard inpainting triggers global attention across the image. (c) Our Inpainting Exchange method localizes attention to the actual edited region." %}
+        {% include figure.liquid path="assets/img/more_localizations.jpeg" class="img-fluid rounded z-depth-1" zoomable=true caption="Figure 6. Additional localization examples showing detector attention via GradCAM. (a) Mask indicates the inpainted region. (b) Standard inpainting triggers global attention across the image. (c) Our Inpainting Exchange method localizes attention to the actual edited region." %}
     </div>
 </div>
 
@@ -192,7 +192,7 @@ To validate our theoretical findings, we analyze the frequency domain difference
 
 <div class="row mt-3">
     <div class="col-sm-12 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/publications/icml2026/fft_analysis.jpeg" class="img-fluid rounded z-depth-1" zoomable=true caption="Figure 4. Frequency domain analysis comparing real images, standard inpainting, and our Inpainting Exchange method. The FFT magnitude spectra reveal the global spectral artifacts introduced by standard inpainting, which are eliminated in our approach." %}
+        {% include figure.liquid path="assets/img/fft_analysis.jpeg" class="img-fluid rounded z-depth-1" zoomable=true caption="Figure 4. Frequency domain analysis comparing real images, standard inpainting, and our Inpainting Exchange method. The FFT magnitude spectra reveal the global spectral artifacts introduced by standard inpainting, which are eliminated in our approach." %}
     </div>
 </div>
 
@@ -207,7 +207,7 @@ Standard inpainting introduces a significant spectral shift, particularly in com
 
 <div class="row mt-3">
     <div class="col-sm-12 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/publications/icml2026/more_differences.jpeg" class="img-fluid rounded z-depth-1" zoomable=true caption="Figure 5. Comparison of standard inpainting versus Inpainting Exchange. From left to right: Original image, Mask, Standard Inpainting, Difference (Original - Inpainting), Inpainting Exchange (Ours), and Difference (Original - Ours). The difference maps reveal that standard inpainting introduces global artifacts across the entire image, while our method produces differences only within the masked region." %}
+        {% include figure.liquid path="assets/img/more_differences.jpeg" class="img-fluid rounded z-depth-1" zoomable=true caption="Figure 5. Comparison of standard inpainting versus Inpainting Exchange. From left to right: Original image, Mask, Standard Inpainting, Difference (Original - Inpainting), Inpainting Exchange (Ours), and Difference (Original - Ours). The difference maps reveal that standard inpainting introduces global artifacts across the entire image, while our method produces differences only within the masked region." %}
     </div>
 </div>
 
