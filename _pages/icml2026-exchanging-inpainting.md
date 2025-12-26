@@ -22,13 +22,13 @@ AI-generated image detection is a central problem in machine learning. Recent de
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/publications/icml2026/original.png" class="img-fluid rounded z-depth-1" zoomable=true caption="(a) Original Image" %}
+        {% include figure.liquid path="assets/img/original.png" class="img-fluid rounded z-depth-1" zoomable=true caption="(a) Original Image" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/publications/icml2026/semitruths.png" class="img-fluid rounded z-depth-1" zoomable=true caption="(b) Standard Inpainting" %}
+        {% include figure.liquid path="assets/img/semitruths.png" class="img-fluid rounded z-depth-1" zoomable=true caption="(b) Standard Inpainting" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/publications/icml2026/ourinpainted.png" class="img-fluid rounded z-depth-1" zoomable=true caption="(c) Inpainting Exchange (Ours)" %}
+        {% include figure.liquid path="assets/img/ourinpainted.png" class="img-fluid rounded z-depth-1" zoomable=true caption="(c) Inpainting Exchange (Ours)" %}
     </div>
 </div>
 <div class="caption">
@@ -90,13 +90,13 @@ This operation removes the global denoising artifact while preserving the edited
 
 <div class="row mt-3">
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/publications/icml2026/mask.jpeg" class="img-fluid rounded z-depth-1" zoomable=true caption="(a) Mask" %}
+        {% include figure.liquid path="assets/img/mask.jpeg" class="img-fluid rounded z-depth-1" zoomable=true caption="(a) Mask" %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/publications/icml2026/semi_inp.jpeg" class="img-fluid rounded z-depth-1" zoomable=true caption="(b) Std. GradCAM" %}
+        {% include figure.liquid path="assets/img/semi_inp.jpeg" class="img-fluid rounded z-depth-1" zoomable=true caption="(b) Std. GradCAM" %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/publications/icml2026/ours_inp.jpeg" class="img-fluid rounded z-depth-1" zoomable=true caption="(c) Ours GradCAM" %}
+        {% include figure.liquid path="assets/img/ours_inp.jpeg" class="img-fluid rounded z-depth-1" zoomable=true caption="(c) Ours GradCAM" %}
     </div>
 </div>
 <div class="caption">
