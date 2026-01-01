@@ -18,7 +18,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 
 ---
 
-I am a computer vision researcher with a strong background in mathematics and machine learning. I recently completed the Master MVA (Mathematics, Vision, Apprentissage) at ENS Paris-Saclay, where I focused on computer vision, generative models, Bayesian image restoration, and geometric data analysis. I hold a Bachelor’s degree in Computer Engineering from TOBB University of Economics and Technology, which I completed as an honor student with a full merit-based scholarship.
+I am a computer vision researcher with a strong background in mathematics and machine learning. I recently completed the Master MVA (Mathematics, Vision, Apprentissage) at ENS Paris-Saclay, where I focused on computer vision, generative models, Bayesian image restoration, and geometric data analysis. I hold a Bachelor’s degree in Computer Engineering from TOBB University of Economics and Technology.
 
 I have experience working across both academic and industrial research environments. My work includes face analysis and geometry-based warping, video-based behavioral modeling for cognitive research, anomaly detection in time-series data, and differentiable computing. I particularly enjoy problems that require combining mathematical structure with practical machine learning systems.
 
