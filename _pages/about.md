@@ -9,7 +9,7 @@ profile:
   image: pp6.png
   image_circular: no # crops the image to make it circular
   more_info: >
-    <p>  Paris, France</p>
+    <p>Paris 75014, France</p>
     
 social: true # includes social icons at the bottom of the page
 selected_papers: false # includes a list of papers marked as "selected={true}"
