@@ -6,7 +6,7 @@ subtitle:
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: pp2.jpeg
   image_circular: yes # crops the image to make it circular
   more_info: >
     <p>  Paris, France</p>
