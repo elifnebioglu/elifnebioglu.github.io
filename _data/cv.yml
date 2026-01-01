@@ -5,8 +5,6 @@
       value: Elif Nebioğlu
     - name: Location
       value: Paris, France
-    - name: Phone
-      value: +33 7 59 51 21 41
     - name: Email
       value: elifnebioglu@hotmail.com
     - name: Links
@@ -21,7 +19,7 @@
       institution: ENS Paris-Saclay, Paris, France
       year: 2024–2025
       description:
-        - Selected coursework: Convex Optimization, Object Recognition & Computer Vision, Reinforcement Learning, Geometric Data Analysis, Probabilistic Graphical Models, Representation Learning, Bayesian ML, DL in Practice, Generative Modelling, Graphs in ML.
+        - Selected coursework; Convex Optimization, Object Recognition & Computer Vision, Reinforcement Learning, Geometric Data Analysis, Probabilistic Graphical Models, Representation Learning, Bayesian ML, DL in Practice, Generative Modelling, Graphs in ML.
     - title: Bachelor of Science in Computer Engineering
       institution: TOBB University of Economics and Technology, Ankara, Türkiye
       year: 2019–2024
