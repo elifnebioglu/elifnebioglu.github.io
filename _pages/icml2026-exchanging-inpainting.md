@@ -220,7 +220,8 @@ Our work motivates the development of more robust, content-aware detection metho
 ## Publication
 
 **Status**: Coming Soon  
-**Conference**: International Conference on Machine Learning (ICML) 2026
+
+
 
 ## Impact Statement
 
