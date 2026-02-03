@@ -24,7 +24,6 @@ nav_order: 2
         <p><strong>ArXiv Link:</strong> <span style="color: #888;"> https://arxiv.org/abs/2602.00192 </span></p>
         <p><strong>Abstract:</strong> Modern AI-generated image detectors achieve strong performance by exploiting artifacts shared across generative models. In this work, we show that for diffusion-based inpainting, a dominant cue is not the edited region itself but a global, filter-like artifact introduced by full-image denoising. We propose a simple post-processing operation, Inpainting Exchange, which preserves the inpainted region while restoring all non-edited pixels from the original image, thereby removing the global denoising footprint. This operation dramatically degrades the accuracy of frequency-based and CLIP-based detectors, often approaching chance-level performance. We complement our attack with a mathematical analysis of diffusion inpainting, interpretability studies revealing detector attention bias, and a 150K-image benchmark extending Semi-Truths. Our results expose a fundamental vulnerability in current detection paradigms and motivate region-aware, artifact-robust approaches.</p>
        
-      </div>
-    </div>
+      
   </div>
 </div>
