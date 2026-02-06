@@ -12,18 +12,72 @@ nav_order: 2
 <!-- Bibsearch Feature -->
 
 <div class="publications">
-  <div class="card mt-3 p-3">
-    <div class="card-body">
-      <h2 class="card-title">
-        <a href="/publications/icml2026-exchanging-inpainting/" style="color: inherit; text-decoration: none;">
-          Exchanging Inpainting Context: Revealing Global-Artifact Bias in AI-Generated Image Detectors
-        </a>
-      </h2>
-      <div class="card-text">
-        <p><strong>Authors:</strong> Elif Nebioğlu, Emirhan Bilgiç, Adrian Popescu</p>
-        <p><strong>ArXiv Link:</strong> <span style="color: #888;"> https://arxiv.org/abs/2602.00192 </span></p>
-        <p><strong>Abstract:</strong> Modern AI-generated image detectors achieve strong performance by exploiting artifacts shared across generative models. In this work, we show that for diffusion-based inpainting, a dominant cue is not the edited region itself but a global, filter-like artifact introduced by full-image denoising. We propose a simple post-processing operation, Inpainting Exchange, which preserves the inpainted region while restoring all non-edited pixels from the original image, thereby removing the global denoising footprint. This operation dramatically degrades the accuracy of frequency-based and CLIP-based detectors, often approaching chance-level performance. We complement our attack with a mathematical analysis of diffusion inpainting, interpretability studies revealing detector attention bias, and a 150K-image benchmark extending Semi-Truths. Our results expose a fundamental vulnerability in current detection paradigms and motivate region-aware, artifact-robust approaches.</p>
-       
-      
+
+  <!-- Card -->
+  <div class="card mt-4 shadow-sm">
+    <div class="row g-0 align-items-center">
+      <!-- Image -->
+      <div class Fujn col-md-3 p-3 text-center">
+        <img src="/assets/img/paper_pic.png"
+             class="img-fluid rounded"
+             alt="Paper thumbnail"
+             style="max-height:140px;">
+      </div>
+      <!-- Info -->
+      <div class="col-md-9">
+        <div class="card-body">
+          <h3 class="card-title mb-1">
+            <a href="/publications/icml2026-exchanging-inpainting/"
+               class="text-decoration-none text-dark">
+              AI-Generated Image Detectors Overrely on Global Artifacts
+            </a>
+          </h3>
+          <p class="text-muted mb-2">
+            In submission to ICML 2026
+          </p>
+          <p class="mb-2">
+            <strong>Elif Nebioğlu</strong>,
+            Emirhan Bilgiç,
+            Adrian Popescu
+          </p>
+          <!-- Links -->
+          <p class="mb-0">
+            <a href="https://arxiv.org/abs/2602.00192" target="_blank">
+              arXiv
+            </a>
+            |
+            <a href="#"
+               data-bs-toggle="modal"
+               data-bs-target="#videoModalICML">
+              Animation
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- Video Modal -->
+<div class="modal fade" id="videoModalICML" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">
+          ICML 2026 – Animation
+        </h5>
+        <button type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <video controls
+               class="w-100 rounded">
+          <source src="/assets/video/PaperAnimation.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
   </div>
 </div>
