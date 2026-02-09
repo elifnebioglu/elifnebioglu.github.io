@@ -6,7 +6,7 @@ subtitle:
 
 profile:
   align: right
-  image: pp2.png
+  image: assets/img/pp2.png
   image_circular: no # crops the image to make it circular
   more_info: >
     <p>Paris 75014, France</p>
