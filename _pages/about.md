@@ -22,6 +22,6 @@ I am completing the Master MVA (Mathematics, Vision, Apprentissage) at ENS Paris
 
 I have experience across both academic and industrial research environments, including face analysis and geometry-based warping, anomaly detection in time-series data, and differentiable computing. My recent work examines AI-generated image detectors and their reliance on global artifacts introduced by generative pipelines. I enjoy problems that combine mathematical structure with practical machine learning systems.
 
-I am currently interested in robustness, generative modeling, and geometric representations in vision, and I am open to research collaborations and discussions. Feel free to reach out via email or connect with me on LinkedIn!
+I am interested in machine learning and computer vision, with a focus on robustness and generative modeling. I enjoy working on challenging problems and learning new techniques. I am open to collaborations and discussions. Feel free to reach out via email or connect with me on LinkedIn!
 
 
