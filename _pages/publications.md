@@ -17,10 +17,13 @@ nav_order: 2
   <div class="card mt-4 shadow-sm">
     <div class="row g-0 align-items-center">
       <!-- Image -->
+        <!-- Image -->
+      <div class="col-md-3 d-flex justify-content-center align-items-center">
         <img src="/assets/img/paper_pic.png"
              class="img-fluid rounded"
              alt="Paper thumbnail"
              style="max-height:140px;">
+      </div>
       <!-- Info -->
       <div class="col-md-9">
         <div class="card-body">
