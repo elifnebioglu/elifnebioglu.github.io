@@ -67,7 +67,6 @@ nav_order: 2
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">
-          ICML 2026 – Animation
         </h5>
         <button type="button"
                 class="btn-close"
