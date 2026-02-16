@@ -34,7 +34,6 @@ nav_order: 2
             </a>
           </h3>
           <p class="text-muted mb-2">
-            In submission to ICML 2026
           </p>
           <p class="mb-2">
             <strong>Elif Nebioğlu</strong>,
