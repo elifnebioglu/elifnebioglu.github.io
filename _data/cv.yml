@@ -6,7 +6,7 @@
     - name: Location
       value: Paris, France
     - name: Email
-      value: elifnebioglu@hotmail.com
+      value: elifnebiogllu@gmail.com
     - name: Links
       value: LinkedIn, GitHub, Website
     - name: Languages
@@ -19,84 +19,132 @@
       institution: ENS Paris-Saclay, Paris, France
       year: 2024–2025
       description:
-        - Selected coursework; Convex Optimization, Object Recognition & Computer Vision, Reinforcement Learning, Geometric Data Analysis, Probabilistic Graphical Models, Representation Learning, Bayesian ML, DL in Practice, Generative Modelling, Graphs in ML.
+        - "GPA: 3.7 / 4.0 (Honor Student)"
+        - "Selected Coursework: Convex Optimization, Object Recognition and Computer Vision, Reinforcement Learning, Stopping Times and Online Algorithms, Geometric Data Analysis, Probabilistic Graphical Models, Representation Learning for Medical Imaging, Bayesian ML, Deep Learning in Practice, Generative Modelling, Graphs in ML."
     - title: Bachelor of Science in Computer Engineering
       institution: TOBB University of Economics and Technology, Ankara, Türkiye
       year: 2019–2024
       description:
+        - "GPA: 3.21 / 4.0 (Honor Student)"
+        - "Selected Coursework: Object Oriented Programming, Data Structures and Algorithms, Design and Analysis of Algorithms, Combinatorics and Graph Theory, Computer Vision, Deep Learning, Introduction to Machine Learning, Image Processing."
         - Merit-based 5-year scholarship awarded for ranking in top 0.003 in the National University Examination.
+
+- title: Publications
+  type: time_table
+  contents:
+    - title: "AI-Generated Image Detectors Overrely on Global Artifacts: Evidence from Inpainting Exchange"
+      year: 2026
+      description:
+        - "Nebioglu, E.*, Bilgiç, E.*, Popescu, A. arXiv:2602.00192, 2026 (under review). *Equal contribution."
+        - Introduced INP-X, a diagnostic method exposing shortcut learning in AI-generated image detectors by removing global VAE artifacts. Evaluated 13 detectors on a 90K-image benchmark, showing accuracy drops from 91% to ~55%.
 
 - title: Experience
   type: time_table
   contents:
+    - title: AI Engineer
+      institution: Corma, Paris, France
+      year: Mar 2026–Present
+      description:
+        - Built a production multi-agent system using LangGraph and remote browser automation to handle SaaS provisioning, deprovisioning, and license extraction across 9+ platforms (Slack, Notion, Miro, Cursor, Figma, Google, etc.).
+        - Designed an end-to-end automation builder pipeline with a chat supervisor, per-block eval harness, self-healing post-run watcher, and SQLite-backed state management.
+        - Developed an LLM-based eval framework for autonomous agent behavior, covering prompt injection, cross-company data leakage, multi-capability reasoning, and out-of-scope detection.
+        - Investigated detectability of LLM-based autonomous agents, contributing to R&D initiatives including a France 2030 grant proposal.
+    - title: Independent Researcher
+      institution: Supervised by Adrian Popescu (Université Paris-Saclay), Paris, France
+      year: Nov 2025–Feb 2026
+      description:
+        - Conceived an independent research project on shortcut learning in AI-generated image detectors, from initial hypothesis through experimental design, dataset construction, and manuscript preparation.
+        - Resulting paper currently under review at ICML.
     - title: Computer Vision Research Intern
       institution: DxO Labs, Paris, France
-      year: Apr 2025 – Oct 2025
+      year: Apr 2025–Oct 2025
       description:
-        - Benchmarked face detectors & facial-feature segmentation for portrait editing.
-        - Built geometry-based face warping (Laplacian deformation) and face-recognition modules used in production.
+        - Designed and implemented an end-to-end face analysis pipeline for portrait retouching.
+        - Integrated state-of-the-art face detection and segmentation models.
+        - Developed custom facial warping algorithms in Python.
+        - Built high-quality facial masks using matting and post-processing techniques.
+        - Collaborated with R&D engineers to integrate solutions into DxO PhotoLab.
     - title: Computer Vision Research Intern
-      institution: TOBB ETÜ, Ankara, Türkiye
-      year: Jul 2024 – Sep 2024
+      institution: TOBB University of Economics and Technology, Ankara, Türkiye
+      year: Jul 2024–Sep 2024
       description:
-        - Developed a video-to-label ML pipeline for classifying locomotor behaviors in fruit flies within a TÜBİTAK-funded cognitive research project.
+        - Developed an end-to-end video-to-label machine learning pipeline to analyze and classify stereotypic locomotor behaviors in fruit flies (Drosophila) within a TÜBİTAK-funded cognitive neuroscience project.
+        - Implemented video preprocessing, feature extraction, and deep learning–based classification models, and optimized the system for reliable behavioral analysis.
     - title: Data Science Intern
       institution: TEMSA, Istanbul, Türkiye
-      year: Jul 2024 – Sep 2024
+      year: Jul 2024–Sep 2024
       description:
-        - Designed an anomaly-detection system for the MD-9 electric bus using CAN telemetry and timeseries modeling.
+        - Designed and implemented an anomaly-detection system for the MD-9 electric bus.
+        - Cleaned and integrated vehicle CAN telemetry data, analyzed multivariate signal patterns.
+        - Trained time-series models to learn normal operating behavior and automatically flag anomalies for predictive maintenance.
     - title: Software Engineering Intern
       institution: STM, Ankara, Türkiye
-      year: Oct 2023 – Jan 2024
+      year: Oct 2023–Jan 2024
       description:
-        - Worked as full-stack developer using Angular & C# in internal web applications.
+        - Worked as a full-stack developer, contributing to in-house web applications using Angular and C#.
     - title: Research Intern
       institution: Telecom Paris, Paris, France
-      year: Feb 2023 – May 2023
+      year: Feb 2023–May 2023
       description:
-        - Contributed to ACMoM’s Eclipse-based model-transformation benchmark by automating runs and reporting performance metrics.
-    - title: Software Engineering Intern
-      institution: HAVELSAN, Ankara, Türkiye
-      year: Jan 2022 – Apr 2022
-      description:
-        - Contributed to DOOB-Tactical; implemented JAX modules for differentiable computing tasks.
+        - Contributed to ACMoM's Eclipse-based model transformation benchmark.
+        - Automated experiment execution, optimized workflow scripts, and collected and reported performance metrics for systematic evaluation.
 
-- title: Open Source Projects
+- title: Projects
   type: time_table
   contents:
+    - title: Text-to-3D Human Motion Generation (Reproduction & Extensions)
+      year: 2025
+      description: "MVA: Object Recognition & Computer Vision. Reproduced the Motion Diffusion Model (MDM) with SMPL-based motion outputs on HumanML3D and KIT-ML datasets. Extended with TMR++ text augmentation, cross-dataset training, and FPS variation, yielding improved generalization and retrieval performance."
     - title: Plug-and-Play Split Gibbs Sampler for Image Restoration
       year: 2025
-      description: Bayesian image restoration using DDPM priors; posterior sampling with uncertainty quantification; compared with DPS and DnCNN baselines.
-    - title: Text-to-3D Human Motion Generation
-      year: 2025
-      description: Reproduced MDM with SMPL outputs; extended with TMR++ text augmentation and cross-dataset generalization.
+      description: "MVA: Generative Modelling. Implemented and extended a PnP-SGS framework for Bayesian image deblurring and restoration. Compared posterior sampling using learned denoisers with direct DDPM-based generation, and investigated alternative prior models."
     - title: VibeTune
       year: 2024
-      description: Prompt-based music recommendation system with Mistral-7B fine-tuning & ChatGPT embeddings; includes an interactive React interface.
+      description: "Bachelor's Thesis. Prompt-driven music recommendation system by fine-tuning Mistral-7B and integrating ChatGPT-based sentiment analysis. Built an interactive React-based web interface for personalized music discovery."
+
+- title: Teaching Experience
+  type: time_table
+  contents:
+    - title: Teaching Assistant – Linear Algebra Applications Laboratories
+      institution: TOBB University of Economics and Technology
+      year: ""
+      description:
+        - Assisted 80 students in lab sessions.
+    - title: Private Tutor
+      institution: ""
+      year: ""
+      description:
+        - Taught Physics and Mathematics to middle and high school students.
+
+- title: Technical Skills
+  type: nested_list
+  contents:
+    - title: Languages
+      items:
+        - Python, Java, C++, MATLAB, SQL, Verilog
+    - title: ML/CV
+      items:
+        - PyTorch, Keras, Scikit-learn, OpenCV, NumPy, Pandas
+    - title: Tools
+      items:
+        - Git, Linux
 
 - title: Honors and Awards
   type: time_table
   contents:
     - year: 2019
       items:
-        - Merit-based full scholarship (5 years) by Istanbul Chamber of Industry for ranking in the top 0.003 nationally.
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Computer Vision & Machine Learning
-      items:
-        - Generative modelling
-        - Representation learning
-        - Bayesian ML & uncertainty
-        - Geometry-based modelling
-    - title: Optimization & Data Analysis
-      items:
-        - Convex and geometric optimization
-        - Probabilistic modelling
+        - "The Business World Scholarship: Merit-based scholarship covering five years of tuition and living expenses at TOBB University, awarded by the Istanbul Chamber of Industry for ranking in the top 0.003 in the National University Examination."
 
 - title: Other Interests
   type: list
   contents:
-    - Swimming (12 years), figure skating, tennis, oil painting.
+    - Swimming (10 years), Theatre, Psychology, Tennis, Oil Painting.
 
+- title: References
+  type: list
+  contents:
+    - "Adrian Popescu: Professor, Université Paris-Saclay — adrian.popescu@cea.fr"
+    - "Thomas Veit: Research Scientist, DxO Labs — tveit@dxo.com"
+    - "Ahmet Murat Özbayoğlu: Professor, TOBB University of Economics and Technology — mozbayoglu@etu.edu.tr"
+    - "Jean-Emmanuel Deschaud: Lecturer, ENS Paris-Saclay / Mines Paris — jean-emmanuel.deschaud@minesparis.psl.eu"
